@@ -240,11 +240,11 @@
             </objects>
             <point key="canvasLocation" x="3525.5999999999999" y="1104.6798029556651"/>
         </scene>
-        <!--Item-->
+        <!--Table-->
         <scene sceneID="kpz-TC-AgX">
             <objects>
                 <navigationController id="Y42-TV-wI2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="table" id="DbK-sp-Sv1"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="table" id="DbK-sp-Sv1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UDX-kO-etk">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
