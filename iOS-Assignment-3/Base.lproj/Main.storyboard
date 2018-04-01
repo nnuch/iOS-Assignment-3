@@ -61,9 +61,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rML-yz-Kea">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rML-yz-Kea">
                                 <rect key="frame" x="0.0" y="88" width="375" height="641"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <viewLayoutGuide key="safeArea" id="KBK-7f-LaL"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="yVg-Ia-0VN">
@@ -103,6 +102,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rML-yz-Kea" firstAttribute="bottom" secondItem="VuT-BU-gan" secondAttribute="bottom" id="1Ff-l1-m6M"/>
+                            <constraint firstItem="rML-yz-Kea" firstAttribute="leading" secondItem="VuT-BU-gan" secondAttribute="leading" id="6c2-YX-XJw"/>
+                            <constraint firstItem="rML-yz-Kea" firstAttribute="trailing" secondItem="VuT-BU-gan" secondAttribute="trailing" id="QFF-Qd-3Hj"/>
+                            <constraint firstItem="rML-yz-Kea" firstAttribute="top" secondItem="VuT-BU-gan" secondAttribute="top" id="nuH-jR-PAy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VuT-BU-gan"/>
                     </view>
                     <navigationItem key="navigationItem" title="Demo CollectionView" id="rC4-cc-UJw"/>
@@ -240,6 +245,48 @@
             </objects>
             <point key="canvasLocation" x="3525.5999999999999" y="1104.6798029556651"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="7Wc-8O-yGl">
+            <objects>
+                <viewController id="Eww-MF-rcj" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iAB-z9-xt9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page-2" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-ua-kNN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tod-9F-1Hn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.39546767979452052" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiO-vB-4uD">
+                                <rect key="frame" x="0.0" y="328" width="375" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Objective-c Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-m3-xzu">
+                                <rect key="frame" x="100" y="395" width="175" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YXs-fp-l5N"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="dyN-YN-xIL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCN-ne-88c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="1858.3743842364534"/>
+        </scene>
         <!--Table-->
         <scene sceneID="kpz-TC-AgX">
             <objects>
@@ -344,15 +391,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2cM-DB-8lE" kind="relationship" relationship="viewControllers" id="iwg-qd-xYZ"/>
-                        <segue destination="nRc-CA-Ix5" kind="relationship" relationship="viewControllers" id="GKr-KL-Z5M"/>
-                        <segue destination="Y42-TV-wI2" kind="relationship" relationship="viewControllers" id="ckV-0g-b9e"/>
-                        <segue destination="dRQ-BO-OJs" kind="relationship" relationship="viewControllers" id="lpD-YF-HNl"/>
+                        <segue destination="Eww-MF-rcj" kind="relationship" relationship="viewControllers" id="ejE-bq-8T6"/>
+                        <segue destination="2cM-DB-8lE" kind="relationship" relationship="viewControllers" id="uNi-MP-qFn"/>
+                        <segue destination="nRc-CA-Ix5" kind="relationship" relationship="viewControllers" id="6oA-G3-Ca5"/>
+                        <segue destination="Y42-TV-wI2" kind="relationship" relationship="viewControllers" id="8lv-Zn-U1E"/>
+                        <segue destination="dRQ-BO-OJs" kind="relationship" relationship="viewControllers" id="34K-2W-IhX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2EM-B8-FGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="318" y="570"/>
+            <point key="canvasLocation" x="548" y="1337"/>
         </scene>
         <!--Add-->
         <scene sceneID="dnB-8f-EM1">
@@ -415,8 +463,10 @@
     <resources>
         <image name="add" width="30" height="30"/>
         <image name="collection" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
         <image name="icon-image" width="40" height="32"/>
         <image name="page" width="30" height="30"/>
+        <image name="page-2" width="640" height="1136"/>
         <image name="table" width="30" height="30"/>
     </resources>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		942CDA822070328300F9ED5D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942CDA812070328300F9ED5D /* DetailViewController.m */; };
+		942CDA8920714DD700F9ED5D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942CDA8820714DD700F9ED5D /* HomeViewController.m */; };
 		942F8898206DE2400092952C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F8896206DE23F0092952C /* TableViewController.m */; };
 		942F889B206DE62D0092952C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F889A206DE62D0092952C /* TableViewCell.m */; };
 		942F88A4206DFE480092952C /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F88A3206DFE480092952C /* DetailTableViewController.m */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		942CDA802070328300F9ED5D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		942CDA812070328300F9ED5D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		942CDA8720714DD700F9ED5D /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		942CDA8820714DD700F9ED5D /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		942F8896206DE23F0092952C /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		942F8897206DE2400092952C /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		942F8899206DE62D0092952C /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 			children = (
 				94DCC6C0206C85DA00279088 /* AppDelegate.h */,
 				94DCC6C1206C85DA00279088 /* AppDelegate.m */,
+				942CDA8720714DD700F9ED5D /* HomeViewController.h */,
+				942CDA8820714DD700F9ED5D /* HomeViewController.m */,
 				942CDA842070998700F9ED5D /* Add */,
 				942F88AE206EE9790092952C /* AboutPageView */,
 				942F889F206DFD9F0092952C /* CollectionView */,
@@ -281,6 +286,7 @@
 				94967D49206D5FF700620856 /* ParseViewController.m in Sources */,
 				94967D4C206D606500620856 /* ParseCollectionViewCell.m in Sources */,
 				94DCC6C2206C85DA00279088 /* AppDelegate.m in Sources */,
+				942CDA8920714DD700F9ED5D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
