@@ -135,7 +135,7 @@ UIImage *originalImage, *editedImage, *imageToUse;
     } else {
         
         NSLog(@"Something To Print");
-        UIAlertController *noDataalertController = [UIAlertController alertControllerWithTitle:@"Oooop!" message:@"Please,enter your message and choose image!" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *noDataalertController = [UIAlertController alertControllerWithTitle:@"Oooop!" message:@"Nothing to upload, try again!" preferredStyle:UIAlertControllerStyleAlert];
         [noDataalertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
         [self presentViewController:noDataalertController animated:YES completion:nil];
         

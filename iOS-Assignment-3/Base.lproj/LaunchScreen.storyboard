@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="demo" translatesAutoresizingMaskIntoConstraints="NO" id="GUj-b5-ic7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo" translatesAutoresizingMaskIntoConstraints="NO" id="GUj-b5-ic7">
                                 <rect key="frame" x="106" y="320" width="203" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GUj-b5-ic7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="FCQ-fj-ldD"/>
+                            <constraint firstItem="GUj-b5-ic7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="HgU-ZH-4hj"/>
+                            <constraint firstItem="GUj-b5-ic7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="300" id="KTQ-QG-v5x"/>
+                            <constraint firstItem="GUj-b5-ic7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SyZ-vP-Nf1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
