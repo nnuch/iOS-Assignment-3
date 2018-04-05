@@ -7,7 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "RoundButton.h"
 
 @interface AddViewController : ViewController
+@property (strong, nonatomic) IBOutlet RoundButton *buttonOff;
+@property (strong, nonatomic) IBOutlet RoundButton *buttonOn;
+
 
 @end

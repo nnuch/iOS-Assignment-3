@@ -20,6 +20,8 @@
 @end
 
 @implementation AddViewController
+@synthesize buttonOn, buttonOff;
+
 
 UIImage *originalImage, *editedImage, *imageToUse;
 
@@ -28,10 +30,13 @@ UIImage *originalImage, *editedImage, *imageToUse;
     
     // MARK: Navigation
     self.navigationController.navigationBar.prefersLargeTitles = YES;
-    _buttonAdd.layer.cornerRadius = 10;
-    _buttonAdd.clipsToBounds = true;
-    
+
+    _myImageView.layer.borderWidth = 1; // as you wish
+    _myImageView.layer.borderColor=[[UIColor lightGrayColor]CGColor];
+    _myImageView.layer.cornerRadius = 10;
+    _myImageView.layer.masksToBounds = true;
 }
+
 
 
 

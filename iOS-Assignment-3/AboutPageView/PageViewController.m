@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBar.prefersLargeTitles = YES;
+    
     about = @[@"page-1",@"page-2", @"page-3" ];
     self.dataSource = self;
     

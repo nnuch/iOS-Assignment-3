@@ -14,6 +14,7 @@
 		942F88A4206DFE480092952C /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F88A3206DFE480092952C /* DetailTableViewController.m */; };
 		942F88A7206EE8250092952C /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F88A6206EE8250092952C /* PageViewController.m */; };
 		942F88B4206EEBEA0092952C /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 942F88B3206EEBEA0092952C /* AddViewController.m */; };
+		946458CC207662CC00B41294 /* RoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 946458CB207662CC00B41294 /* RoundButton.m */; };
 		94967D49206D5FF700620856 /* ParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94967D48206D5FF700620856 /* ParseViewController.m */; };
 		94967D4C206D606500620856 /* ParseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 94967D4B206D606500620856 /* ParseCollectionViewCell.m */; };
 		94DCC6C2206C85DA00279088 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DCC6C1206C85DA00279088 /* AppDelegate.m */; };
@@ -51,6 +52,8 @@
 		942F88A6206EE8250092952C /* PageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		942F88B2206EEBEA0092952C /* AddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
 		942F88B3206EEBEA0092952C /* AddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		946458CA207662CC00B41294 /* RoundButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundButton.h; sourceTree = "<group>"; };
+		946458CB207662CC00B41294 /* RoundButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundButton.m; sourceTree = "<group>"; };
 		94967D47206D5FF700620856 /* ParseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseViewController.h; sourceTree = "<group>"; };
 		94967D48206D5FF700620856 /* ParseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseViewController.m; sourceTree = "<group>"; };
 		94967D4A206D606500620856 /* ParseCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseCollectionViewCell.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				94DCC6C4206C85DA00279088 /* ViewController.m */,
 				942F88A5206EE8250092952C /* PageViewController.h */,
 				942F88A6206EE8250092952C /* PageViewController.m */,
+				946458CA207662CC00B41294 /* RoundButton.h */,
+				946458CB207662CC00B41294 /* RoundButton.m */,
 			);
 			path = AboutPageView;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			files = (
 				942F88A4206DFE480092952C /* DetailTableViewController.m in Sources */,
 				942F889B206DE62D0092952C /* TableViewCell.m in Sources */,
+				946458CC207662CC00B41294 /* RoundButton.m in Sources */,
 				942F88B4206EEBEA0092952C /* AddViewController.m in Sources */,
 				942F88A7206EE8250092952C /* PageViewController.m in Sources */,
 				94DCC6C5206C85DA00279088 /* ViewController.m in Sources */,

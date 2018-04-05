@@ -23,6 +23,7 @@
 
      [self queryParseMethod];
     //self.imagesCollection.backgroundColor =  [UIColor grayColor];
+    self.navigationController.navigationBar.prefersLargeTitles = YES;
     
     double width = self.imagesCollection.frame.size.width;
     width /= 3;

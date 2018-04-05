@@ -19,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+ self.navigationController.navigationBar.prefersLargeTitles = YES;
     
     // Do any additional setup after loading the view.
     [self retrieveFromParse];
