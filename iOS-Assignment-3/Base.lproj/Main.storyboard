@@ -253,7 +253,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page-2" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-ua-kNN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="page-4" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-ua-kNN">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -270,8 +270,8 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Objective-c Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-m3-xzu">
-                                <rect key="frame" x="100" y="395" width="175" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Objective-c Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFm-m3-xzu">
+                                <rect key="frame" x="115" y="395" width="146" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -321,9 +321,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiW-ny-bIC">
-                                                <rect key="frame" x="121" y="24" width="40" height="32"/>
+                                                <rect key="frame" x="16" y="6" width="94" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button" image="icon-image"/>
+                                                <state key="normal" image="icon-image"/>
                                                 <connections>
                                                     <action selector="addImage:" destination="APM-b2-0Cz" eventType="touchUpInside" id="qtl-8c-Zb2"/>
                                                 </connections>
@@ -402,11 +402,11 @@
             </objects>
             <point key="canvasLocation" x="548" y="1337"/>
         </scene>
-        <!--Add-->
+        <!--New-->
         <scene sceneID="dnB-8f-EM1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2cM-DB-8lE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add" image="add" id="rpw-r6-Qch"/>
+                    <tabBarItem key="tabBarItem" title="New" image="add" id="rpw-r6-Qch"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="07u-mr-iOV">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -466,7 +466,7 @@
         <image name="home" width="30" height="30"/>
         <image name="icon-image" width="40" height="32"/>
         <image name="page" width="30" height="30"/>
-        <image name="page-2" width="640" height="1136"/>
+        <image name="page-4" width="640" height="1136"/>
         <image name="table" width="30" height="30"/>
     </resources>
 </document>
