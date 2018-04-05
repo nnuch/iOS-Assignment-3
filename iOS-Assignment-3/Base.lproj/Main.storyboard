@@ -261,7 +261,8 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tod-9F-1Hn">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="0.39546767979452052" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="0.26979880136986301" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiO-vB-4uD">
                                 <rect key="frame" x="0.0" y="328" width="375" height="72"/>
@@ -279,6 +280,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YXs-fp-l5N"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="dyN-YN-xIL"/>
@@ -304,7 +306,7 @@
             </objects>
             <point key="canvasLocation" x="1868" y="1106"/>
         </scene>
-        <!--New-->
+        <!--New Story-->
         <scene sceneID="9BW-2k-Mbe">
             <objects>
                 <viewController id="APM-b2-0Cz" customClass="AddViewController" sceneMemberID="viewController">
@@ -320,14 +322,6 @@
                                         <rect key="frame" x="9" y="89" width="358" height="519"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiW-ny-bIC">
-                                                <rect key="frame" x="16" y="6" width="94" height="32"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" image="icon-image"/>
-                                                <connections>
-                                                    <action selector="addImage:" destination="APM-b2-0Cz" eventType="touchUpInside" id="qtl-8c-Zb2"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add image " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPZ-QS-5og">
                                                 <rect key="frame" x="169" y="25" width="86" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -340,6 +334,14 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiW-ny-bIC">
+                                                <rect key="frame" x="102" y="5" width="70" height="70"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="icon-image"/>
+                                                <connections>
+                                                    <action selector="addImage:" destination="APM-b2-0Cz" eventType="touchUpInside" id="qtl-8c-Zb2"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.3514822345890411" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -364,7 +366,7 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6cY-D9-GqM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New" id="eXK-gM-lzs">
+                    <navigationItem key="navigationItem" title="New Story" id="eXK-gM-lzs">
                         <barButtonItem key="rightBarButtonItem" title="Upload" id="q8w-bm-A7J">
                             <connections>
                                 <action selector="post:" destination="APM-b2-0Cz" id="dbP-Lu-pKN"/>
@@ -372,6 +374,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonAdd" destination="wiW-ny-bIC" id="iP0-xf-xSp"/>
                         <outlet property="myImageView" destination="00i-BP-koD" id="JUY-l6-HSe"/>
                         <outlet property="myTextField" destination="Ngs-KF-UKS" id="xca-gq-nEw"/>
                     </connections>
@@ -379,7 +382,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPc-N8-llJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="d6R-UI-ua1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2638" y="-358"/>
+            <point key="canvasLocation" x="2637.5999999999999" y="-358.37438423645324"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pBj-WA-TzS">

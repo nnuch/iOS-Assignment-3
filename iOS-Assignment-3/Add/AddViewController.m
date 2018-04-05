@@ -15,6 +15,7 @@
 @interface AddViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
+@property (strong, nonatomic) IBOutlet UIButton *buttonAdd;
 
 @end
 
@@ -27,7 +28,8 @@ UIImage *originalImage, *editedImage, *imageToUse;
     
     // MARK: Navigation
     self.navigationController.navigationBar.prefersLargeTitles = YES;
-    
+    _buttonAdd.layer.cornerRadius = 10;
+    _buttonAdd.clipsToBounds = true;
     
 }
 
