@@ -20,8 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 
      [self queryParseMethod];
+    
     //self.imagesCollection.backgroundColor =  [UIColor grayColor];
     self.navigationController.navigationBar.prefersLargeTitles = YES;
     
@@ -50,7 +52,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"MyPost"];
 
     //and it will return object found within that class
-    //and assign too imageFileArray
+    //and assign to imageFileArray
    
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if (!error){
@@ -75,12 +77,14 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    // the custom cell we named for the reusable identifier
+    // the custom cell, that's named for the reusable identifier
     static NSString *cellIdentifier = @"cell";
     ParseCollectionViewCell *cell = (ParseCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    //Here where we wanna retrieve the image object files from parse
+    
+    //Here where want to retrieve the image object files from parse server
     //display data in UITableView in reverse order
+    
     PFObject *imageObject = [imageFileArray objectAtIndex:(imageFileArray.count - indexPath.row - 1)];
     PFFile *imageFile = [imageObject objectForKey:@"imageFile"];
     cell.loadingSpinner.hidden = NO;
@@ -103,19 +107,6 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-//    PFObject *imageObject = [imageFileArray objectAtIndex:indexPath.row];
-//    PFFile *imageFile = [imageObject objectForKey:@"imageFile"];
-//    NSLog(@"%@", imageObject.objectId);
-//    [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-//        if (!error) {
-//            NSLog(@"%@", data);
-//             _detailImage.image = [UIImage imageWithData:data];
-//        }
-//    }];
-//
-//    [self animatieDetailView];
-    
     [self performSegueWithIdentifier:@"showDetail" sender:self];
     
   
@@ -134,24 +125,15 @@
     
 }
 
-
-
-//animated to DetailView
-//- (void) animatieDetailView {
-//    [UIView animateWithDuration:0.5 animations:^{
-//        _detailView.frame = CGRectMake(0, 0, 375, 641);
-//    }];
-//}
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)dismissBtn:(id)sender {
-    [UIView animateWithDuration:0.5 animations:^{
-        _detailView.frame = CGRectMake(375, 0, 375, 641);
-    }];
-}
+//- (IBAction)dismissBtn:(id)sender {
+//    [UIView animateWithDuration:0.5 animations:^{
+//        _detailView.frame = CGRectMake(375, 0, 375, 641);
+//    }];
+//}
+
 @end

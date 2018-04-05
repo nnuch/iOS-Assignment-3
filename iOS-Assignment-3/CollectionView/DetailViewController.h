@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 
 @interface DetailViewController : ViewController
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageFile;
 @property (nonatomic, strong) PFFile *myimageFile;
 

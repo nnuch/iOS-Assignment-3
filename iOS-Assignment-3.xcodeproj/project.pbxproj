@@ -108,6 +108,8 @@
 		942CDA842070998700F9ED5D /* Add */ = {
 			isa = PBXGroup;
 			children = (
+				946458CA207662CC00B41294 /* RoundButton.h */,
+				946458CB207662CC00B41294 /* RoundButton.m */,
 				942F88B2206EEBEA0092952C /* AddViewController.h */,
 				942F88B3206EEBEA0092952C /* AddViewController.m */,
 			);
@@ -147,8 +149,6 @@
 				94DCC6C4206C85DA00279088 /* ViewController.m */,
 				942F88A5206EE8250092952C /* PageViewController.h */,
 				942F88A6206EE8250092952C /* PageViewController.m */,
-				946458CA207662CC00B41294 /* RoundButton.h */,
-				946458CB207662CC00B41294 /* RoundButton.m */,
 			);
 			path = AboutPageView;
 			sourceTree = "<group>";

@@ -10,7 +10,6 @@
 
 @implementation RoundButton
 
-
 @dynamic borderColor,borderWidth,cornerRadius;
 
 
@@ -25,5 +24,6 @@
 -(void)setCornerRadius:(CGFloat)cornerRadius{
     [self.layer setCornerRadius:cornerRadius];
 }
+
 @end
 

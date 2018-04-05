@@ -19,10 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
- self.navigationController.navigationBar.prefersLargeTitles = YES;
-    
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationController.navigationBar.prefersLargeTitles = YES;
+   
     [self retrieveFromParse];
    
 }
@@ -41,7 +42,7 @@
     PFQuery *query = [PFQuery queryWithClassName:@"MyPost"];
     
     //and it will return object found within that class
-    //and assign too imageFileArray
+    //and assign to Array
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if (!error){
             messagesArray = [[NSArray alloc] initWithArray:objects];
@@ -65,11 +66,11 @@
         self.navigationItem.rightBarButtonItem.enabled = YES;
 }
 
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        
         
         PFObject *tempObject = [messagesArray  objectAtIndex:(messagesArray.count - indexPath.row - 1)];
         [tempObject deleteInBackground];
@@ -89,7 +90,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
         return [messagesArray count];
 }
-
 
 //Setup cells in tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -119,8 +119,6 @@
             
 }
 
-
-
 //Passing Data Using Segue
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath* )indexPath{
     [self performSegueWithIdentifier:@"showDetail" sender:self];
@@ -140,9 +138,7 @@
     PFObject *imageObject = [messagesArray  objectAtIndex:(messagesArray.count - indexPath.row - 1)];
     NSLog(@"%@", imageObject.objectId);
     vc.myimageFile = [imageObject objectForKey:@"imageFile"];
-    
-//PFObject *imageObject = [messagesArray objectAtIndex:indexPath.row];
-    
+
 }
 
 @end

@@ -11,4 +11,5 @@
 @implementation ParseCollectionViewCell
 
 @synthesize parseImage, loadingSpinner;
+
 @end

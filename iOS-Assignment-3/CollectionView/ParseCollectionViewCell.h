@@ -10,6 +10,7 @@
 
 
 @interface ParseCollectionViewCell : UICollectionViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *parseImage;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingSpinner;
 

@@ -18,14 +18,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.navigationItem.largeTitleDisplayMode = NO;
+   
+    self.navigationController.navigationBar.prefersLargeTitles = NO;
+    
     [myimageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         if (!error) {
             NSLog(@"%@", data);
             imageFile.image = [UIImage imageWithData:data];
         }
     }];
- 
+
     
 }
 
@@ -33,10 +35,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
-
 
 
 @end

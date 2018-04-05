@@ -13,6 +13,7 @@
 
 
 @interface AddViewController ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
 @property (strong, nonatomic) IBOutlet UIButton *buttonAdd;
@@ -30,7 +31,8 @@ UIImage *originalImage, *editedImage, *imageToUse;
     
     // MARK: Navigation
     self.navigationController.navigationBar.prefersLargeTitles = YES;
-
+    
+    // MARK: Set stlye for imageView
     _myImageView.layer.borderWidth = 1; // as you wish
     _myImageView.layer.borderColor=[[UIColor lightGrayColor]CGColor];
     _myImageView.layer.cornerRadius = 10;

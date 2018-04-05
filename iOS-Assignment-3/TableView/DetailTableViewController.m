@@ -22,7 +22,8 @@
 
 - (void)viewDidLoad {
    // [super viewDidLoad];
-    self.navigationItem.largeTitleDisplayMode = NO;
+    
+    self.navigationController.navigationBar.prefersLargeTitles = NO;
     
     labelText.text = labelTexts ;
     [myimageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
@@ -33,8 +34,6 @@
     }];
     
 }
-
-
 
 
 @end
