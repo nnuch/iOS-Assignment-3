@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
    // [super viewDidLoad];
+    self.navigationItem.largeTitleDisplayMode = NO;
     
     labelText.text = labelTexts ;
     [myimageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {

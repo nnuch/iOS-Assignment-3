@@ -74,6 +74,7 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     // the custom cell we named for the reusable identifier
     static NSString *cellIdentifier = @"cell";
     ParseCollectionViewCell *cell = (ParseCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];

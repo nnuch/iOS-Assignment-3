@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.navigationItem.largeTitleDisplayMode = NO;
     [myimageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
         if (!error) {
             NSLog(@"%@", data);
