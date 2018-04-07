@@ -41,7 +41,7 @@
 - (void) retrieveFromParse {
     PFQuery *query = [PFQuery queryWithClassName:@"MyPost"];
     
-    //and it will return object found within that class
+    //it will return object found within that class
     //and assign to Array
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
         if (!error){
@@ -59,7 +59,7 @@
     [super setEditing:editing animated:animated];
     [self.tableView setEditing:editing animated:YES];
     
-    //Do not let the user add if the app is in edit mode.
+    //Do not let the user do anything if the app is in edit mode.
     if(editing)
         self.navigationItem.rightBarButtonItem.enabled = YES;
     else

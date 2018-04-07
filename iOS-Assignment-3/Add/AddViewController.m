@@ -24,6 +24,7 @@
 @synthesize buttonOn, buttonOff;
 
 
+
 UIImage *originalImage, *editedImage, *imageToUse;
 
 - (void)viewDidLoad {
@@ -102,11 +103,13 @@ UIImage *originalImage, *editedImage, *imageToUse;
     
 }
 
+
+//MARK: ADD
 - (IBAction)addImage:(id)sender {
     [self startMediaBrowserFromViewController: self usingDelegate: self];
 }
 
-
+//MARK: UPLOAD
 - (IBAction)post:(id)sender {
     
     if ((_myImageView.image != nil) && (_myTextField.text != nil)) {
@@ -142,7 +145,6 @@ UIImage *originalImage, *editedImage, *imageToUse;
     }
     
 }
-
 
 
 //Keyboard show and hide

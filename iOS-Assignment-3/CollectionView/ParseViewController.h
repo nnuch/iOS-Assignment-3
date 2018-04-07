@@ -22,7 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIView *detailView;
 @property (weak, nonatomic) IBOutlet UIImageView *detailImage;
 
-- (IBAction)dismissBtn:(id)sender;
+//- (IBAction)dismissBtn:(id)sender;
 
 @end
 

@@ -36,7 +36,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//helper method
+
+//MARK: Helper method
 - (UIViewController *) viewControllerAtIndex: (NSUInteger)index{
     //creating instance
     ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
@@ -57,6 +58,7 @@
     return [self viewControllerAtIndex:index];
 }
 
+
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:( UIViewController *)viewController {
     NSUInteger index = ((ViewController *) viewController).pageIndex;
     if (index == NSNotFound) {
@@ -72,7 +74,7 @@
 }
 
 
-// fixed problem, button didn't appear on the screen.
+// fixed issue, button didn't appear on the screen.
 // indicator button get called by using presentationCountForPageViewController methods
 - (void) setupPageControl
 {
@@ -80,9 +82,8 @@
     [[UIPageControl appearance] setCurrentPageIndicatorTintColor: [UIColor greenColor]];
     [[UIPageControl appearance] setTintColor: [UIColor greenColor]];
     [[UIPageControl appearance] setBackgroundColor:  [UIColor whiteColor]];
-
-    
 }
+
 
 - (NSInteger) presentationCountForPageViewController: (UIPageViewController *) pageViewController
 {
@@ -90,10 +91,10 @@
     return [about count];
 }
 
+
 - (NSInteger) presentationIndexForPageViewController: (UIPageViewController *) pageViewController
 {
     return 0;
 }
-
 
 @end

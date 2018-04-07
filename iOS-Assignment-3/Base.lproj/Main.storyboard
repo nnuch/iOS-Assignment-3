@@ -379,6 +379,7 @@
                     <connections>
                         <outlet property="buttonAdd" destination="wiW-ny-bIC" id="n5n-ty-Mvn"/>
                         <outlet property="buttonOff" destination="wiW-ny-bIC" id="2zG-lk-9VN"/>
+                        <outlet property="buttonOn" destination="wiW-ny-bIC" id="0l2-dr-MBl"/>
                         <outlet property="myImageView" destination="00i-BP-koD" id="JUY-l6-HSe"/>
                         <outlet property="myTextField" destination="Ngs-KF-UKS" id="xca-gq-nEw"/>
                     </connections>

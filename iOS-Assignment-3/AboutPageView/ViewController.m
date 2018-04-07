@@ -12,14 +12,12 @@
 
 @end
 
-
 @implementation ViewController
 @synthesize strImage, pageIndex;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     self.aboutImages.image = [UIImage imageNamed:strImage];
  

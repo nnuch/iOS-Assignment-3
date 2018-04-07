@@ -24,9 +24,9 @@
     //MARK: Connect my app to my service hosted online (Parse SDK).
     [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration){
         
-        configuration.applicationId = @"RFLllZKDB8bRDhbk0GoaPpqwfUoaKQlFpJERQzwH";
+        configuration.applicationId = @"your appID";
         
-        configuration.clientKey = @"mAHA1Ur7LUZpdZK11kIj10R76MCEE4dh6csP1g6A";
+        configuration.clientKey = @"your clientKey";
         
         configuration.server = @"https://parseapi.back4app.com";
         

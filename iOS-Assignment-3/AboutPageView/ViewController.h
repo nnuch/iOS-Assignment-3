@@ -12,8 +12,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *aboutImages;
 
-@property  NSString *strImage;
-@property  NSUInteger *pageIndex;
+@property   NSString *strImage;
+@property   NSUInteger *pageIndex;
 @property   NSUInteger *index;
 @end
 

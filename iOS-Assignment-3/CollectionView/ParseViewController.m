@@ -21,8 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
-     [self queryParseMethod];
+   
     
     //self.imagesCollection.backgroundColor =  [UIColor grayColor];
     self.navigationController.navigationBar.prefersLargeTitles = YES;
@@ -51,7 +50,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"MyPost"];
 
-    //and it will return object found within that class
+    //it will return object found within that class
     //and assign to imageFileArray
    
     [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
